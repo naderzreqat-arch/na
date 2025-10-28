@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سيره ذاتيه</title>
+  <style>
+    :root{
+      --bg: #0f172a;
+      --card: #0b1220;
+      --accent: #7dd3fc;
+      --muted: #94a3b8;
+      --glass: rgba(255,255,255,0.03);
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,var(--bg), #071024 70%);
+      color: #e6eef8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    .container{
+      width:100%;
+      max-width:920px;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+    header{
+      text-align:center;
+      margin-bottom:6px;
+    }
+    header h1{
+      margin:0 0 6px 0;
+      font-size:20px;
+      letter-spacing:0.6px;
+    }
+    header p{margin:0;color:var(--muted);font-size:13px}
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), var(--glass));
+      border: 1px solid rgba(125,211,252,0.08);
+      padding:20px 22px;
+      border-radius:14px;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+      transition: transform .22s ease, box-shadow .22s ease;
+      backdrop-filter: blur(6px) saturate(1.05);
+    }
+    .card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(3,8,30,0.7);
+    }
+    .para-title{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin-bottom:10px;
+    }
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(125,211,252,0.18)}
+    p.lead{margin:0;font-size:15px;line-height:1.7;color:#dff7ff}
+    p.small{margin-top:10px;color:var(--muted);font-size:13px}
+
+    
+    @media(min-width:880px){
+      .container{grid-template-columns:repeat(2,1fr);}
+    }
+    
+    .card p{margin:0}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header style="grid-column:1/-1">
+      <h1>السيرة الذاتية</h1>
+     <p> نادر بشير مصطفى زريقات</p>
+    </header>
+
+    <section class="card" aria-labelledby="p1">
+      <div class="para-title"><span class="dot" aria-hidden="true"></span><strong id="p1">شهادات</strong></div>
+      <p class="lead">طالب بكالوريوس في حامعة الطفيلة التقنيه ادرس حوسبة الاجهزه الذكيه.</p>
+      <p class="small">(هذه فقرة عن حياتي العلمية.)</p>
+    </section>
+
+    <section class="card" aria-labelledby="p2">
+      <div class="para-title"><span class="dot" aria-hidden="true"></span><strong id="p2"|></strong> دورات</strong></div>
+      <p class="lead">  امتلك دورات في عدة مجالات لدي دورة صناعة ويب <br>. ودورة تشفير رقمي ودورة بايثون</p>
+      <p class="small">(بعض من دوراتي.)</p>
+    </section>
+
+    <section class="card" aria-labelledby="p3">
+      <div class="para-title"><span class="dot" aria-hidden="true"></span><strong id="p3">اقامتي </strong></div>
+      <p class="lead">  انا اردني جنسه اعيش في عجلون حيث منزلي هناكومكان اقامتي الدىم لكن الان لدي مكان اقامه مؤقت في طفيله لاني ادرس في جامعة.</p>
+      <p class="small">(نظره عامه عن حياتي.)</p>
+    </section>
+
+    <section class="card" aria-labelledby="p4">
+      <div class="para-title"><span class="dot" aria-hidden="true"></span><strong id="p4">معلوماتي </strong></div>
+      <p class="lead"> نادر بشير مصطفى زريقات <br>naderzreqat@gmail.com <br>0797877108 <br>320230602002
+         .</p>
+      <p class="small">(معلوماتي الشخصية .)</p>
+    </section>
+
+  </main>
+</body>
+</html>
